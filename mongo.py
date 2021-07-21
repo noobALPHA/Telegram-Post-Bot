@@ -1,8 +1,9 @@
 from pymongo import MongoClient
+from confing import mognodb_uri
 import asyncio
 
-client = MongoClient('mognodb_uri')
-Database = client['collections']
+client = MongoClient(mognodb_uri)
+Database = client['DataBase']
 Admins = Database['Admins']
 Posts = Database['Posts']
 
