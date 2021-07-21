@@ -1,5 +1,5 @@
 from pymongo import MongoClient
-from confing import MONGODB_URI
+from config import MONGODB_URI
 import asyncio
 
 client = MongoClient(MONGODB_URI)
