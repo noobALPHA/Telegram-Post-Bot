@@ -1,7 +1,7 @@
 from pyrogram import Client, filters
 from pyrogram.types import *
 from config import *
-from mongo import *
+from pymongo import *
 import asyncio
 
 bot = Client('bot',api_id=API_ID,api_hash=API_HASH,bot_token=TOKEN)
